@@ -29,5 +29,8 @@ return pIns; \
 #define ADD_TOUCH Director::getInstance()->getTouchDispatcher()->addTargetedDelegate(this, 0, true)
 #define REMOVE_TOUCH Director::getInstance()->getTouchDispatcher()->removeDelegate(this)
 */
+/************************************************************************/
+/* hehe vim                                                                     */
+/************************************************************************/
 
 #endif /* defined(__threeKingdoms__GameCommon__) */
