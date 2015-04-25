@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
-
+#include "ui/createCharacter/CreateCharacterFacade.h"
+#include "cocos-ext.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
@@ -46,11 +47,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    //// create a scene. it's an autorelease object
+    //auto scene = HelloWorld::createScene();
 
-    // run
-    director->runWithScene(scene);
+    //// run
+    //director->runWithScene(scene);
+
+	INSTANCE(CreateCharacterFacade)->openCreateCharacterScene();
 
     return true;
 }
